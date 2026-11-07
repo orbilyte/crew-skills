@@ -53,7 +53,7 @@ Die MCP-Server `knowledge-mcp`, `dach-mcp` und `offer-mcp` sind optional und nic
 - **Kein Update:** Installiert ist der Stand beim Import. Für ein Update das Plugin entfernen und neu hinzufügen.
 - **Höchstens 48 eigene Skills** sieht der Bot, alphabetisch sortiert, auch über mehrere Plugins hinweg.
 
-**Noch nicht geprüft:** der Import gegen das echte GitHub und die Wirkung bei jedem Modell. Geprüft sind Parser und Plugin-Vorschau von Rakazo am Quellcode. Kleine Modelle halten sich nicht zuverlässig an jede Anweisung. Beträge und Entwürfe also immer prüfen.
+**Geprüft** am 07.11.2026 mit Rakazo v0.7.0: Die Plugin-Vorschau lädt das Repository von GitHub und erkennt alle Skills, ohne etwas zu überspringen. Sind gleichnamige Skills schon vorhanden, bricht die Installation wie oben beschrieben ab. **Noch nicht geprüft:** die Wirkung bei jedem Modell. Kleine Modelle halten sich nicht zuverlässig an jede Anweisung. Beträge und Entwürfe also immer prüfen.
 
 **Fachliche Grenzen:** Die Skills ersetzen keine Rechts- oder Steuerberatung. Genannte Gesetze und Pauschalen haben einen Stand im jeweiligen Skill, sie können veralten. Eine fachliche Abnahme durch Rechts- oder Steuerberatung liegt nicht vor.
 
