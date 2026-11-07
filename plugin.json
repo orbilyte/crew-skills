@@ -1,0 +1,8 @@
+{
+	"$schema": "https://agent-plugins.org/schemas/1.1.0/plugin.schema.json",
+	"name": "crew-skills",
+	"version": "0.1.0",
+	"description": "Deutsche Skills für Büro und Alltag in kleinen und mittleren Unternehmen.",
+	"license": "Apache-2.0",
+	"author": { "name": "orbilyte", "email": "hello@orbilyte.de" }
+}

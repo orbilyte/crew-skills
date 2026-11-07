@@ -1,0 +1,23 @@
+{
+	"name": "crew-skills",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Deutsche Skill-Bibliothek, importierbar in Rakazo",
+	"license": "Apache-2.0",
+	"type": "module",
+	"engines": {
+		"node": ">=24"
+	},
+	"scripts": {
+		"check": "biome check .",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"validate": "node tools/validate/cli.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.5",
+		"@types/node": "^26.6.6",
+		"typescript": "^7.0.2",
+		"vitest": "^5.1.0"
+	}
+}

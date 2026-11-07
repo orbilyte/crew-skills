@@ -1,0 +1,75 @@
+{
+  "skills": [
+    {
+      "name": "anfrage-erfassen",
+      "description": "Greift, wenn eine Kundenanfrage aus einem Formular oder einer Mail in feste Angaben übertragen und auf Lücken geprüft werden soll, etwa bei \"neue Anfrage über das Formular\", \"erfass diese Anfrage\" oder \"fehlt bei der Anfrage noch was\".",
+      "category": "buero",
+      "requiredMcpServers": [
+        "offer-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/anfrage-erfassen"
+    },
+    {
+      "name": "angebot-aus-anfrage",
+      "description": "Greift, wenn aus einer noch nicht erfassten Kundenanfrage in einem Schritt ein prüfbarer Angebotsentwurf entstehen soll, ohne Preiswerkzeug, etwa bei \"mach daraus ein Angebot\", \"Angebot für diese Anfrage\" oder \"was müssen wir dem Kunden anbieten\".",
+      "category": "buero",
+      "requiredMcpServers": [
+        "dach-mcp",
+        "knowledge-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/angebot-aus-anfrage"
+    },
+    {
+      "name": "angebot-erstellen",
+      "description": "Greift, wenn aus einer bereits erfassten Anfrage ein Angebotsentwurf mit Preisen aus einem Preiswerkzeug oder einer Preistabelle entstehen soll, etwa bei \"kalkulier das Angebot\", \"erstell das Angebot aus der Preistabelle\" oder \"Angebot zur erfassten Anfrage\".",
+      "category": "buero",
+      "requiredMcpServers": [
+        "offer-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/angebot-erstellen"
+    },
+    {
+      "name": "google-bewertung-beantworten",
+      "description": "Greift, wenn zu einer Google-Bewertung eine Antwort entworfen werden soll, etwa bei \"antworte auf diese Bewertung\", \"neue Google-Rezension\" oder \"was schreiben wir auf diese schlechte Bewertung\".",
+      "category": "allgemein",
+      "requiredMcpServers": [
+        "knowledge-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/google-bewertung-beantworten"
+    },
+    {
+      "name": "lieferant-anfragen",
+      "description": "Greift, wenn aus einer erfassten Kundenanfrage eine Anfrage an einen Lieferanten als Entwurf entstehen soll, etwa bei \"frag den Lieferanten an\", \"Anfrage an den Lieferanten vorbereiten\" oder \"das haben wir nicht in der Preisliste\".",
+      "category": "buero",
+      "requiredMcpServers": [
+        "offer-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/lieferant-anfragen"
+    },
+    {
+      "name": "posteingang-sortieren",
+      "description": "Greift, wenn eingehende Mails nach Thema und Dringlichkeit sortiert und Aufgaben sowie Antwortentwürfe abgeleitet werden sollen, etwa bei \"sortier meine Mails\", \"was ist heute im Postfach wichtig\" oder \"räum den Posteingang auf\".",
+      "category": "allgemein",
+      "requiredMcpServers": [
+        "knowledge-mcp"
+      ],
+      "approval": "pflicht",
+      "path": "skills/posteingang-sortieren"
+    },
+    {
+      "name": "tagesbriefing",
+      "description": "Greift, wenn Termine, Fristen, offene Freigaben und wichtige Eingänge zu einem kurzen Tagesüberblick zusammengefasst werden sollen, etwa bei \"was steht heute an\", \"gib mir mein Tagesbriefing\" oder \"Überblick für morgen\".",
+      "category": "allgemein",
+      "requiredMcpServers": [
+        "dach-mcp"
+      ],
+      "approval": "keine",
+      "path": "skills/tagesbriefing"
+    }
+  ]
+}
