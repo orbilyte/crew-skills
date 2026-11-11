@@ -1,0 +1,29 @@
+name: Shop neu bauen
+
+# Meldet einen neuen Stand an den Shop skills.orbilyte.de. Der Vercel Deploy Hook
+# startet dort einen Build, der crew-skills an CREW_SKILLS_REF neu einliest.
+# Die Hook-URL liegt als Secret SHOP_DEPLOY_HOOK_URL im Repository, nie im Code.
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Hook aufrufen
+        env:
+          HOOK: ${{ secrets.SHOP_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "SHOP_DEPLOY_HOOK_URL ist nicht gesetzt, kein Rebuild."
+            exit 0
+          fi
+          curl --fail --silent --show-error -X POST "$HOOK" > /dev/null
+          echo "Rebuild angestoßen."
